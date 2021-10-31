@@ -12,6 +12,9 @@ from pytesseract import pytesseract
 
 # Extraction-OCR-Class
 
+# Module
+from AddressFormatter.addressFormatter import addressJSON
+
 
 class Extract(Resource):
     # ----------
@@ -24,4 +27,5 @@ class Extract(Resource):
     def post(self):
         img = Image.open(request.files['img'])  # Load-Image
         text = pytesseract.image_to_string(img)  # Tesseract-Conversion
-        return Format(text)
+        # FormattedJSON =  (Format(text))
+        return addressJSON(text)
