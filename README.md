@@ -61,5 +61,8 @@ The solution uses the assistance of the mobile aadhaar operator. The operator wi
 
 [Auditlogs.pdf](https://github.com/MPUATFORCES/PataParivartanBackend/files/7448532/Auditlogs.pdf)
 
+## Try it out
+[APK](https://drive.google.com/drive/folders/1D8dedNT9rmyvkNjE-C1VDpknf_GWomHo?usp=sharing)
+
 ## Presentation-Slides
 [Presentation-Slides](https://www.canva.com/design/DAEuH3MhCrU/share/preview?token=Ic546kbhcW22ZJP5prKIKA&role=EDITOR&utm_content=DAEuH3MhCrU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
