@@ -49,7 +49,7 @@ The solution uses the assistance of the mobile aadhaar operator. The operator wi
 * Frontend - React Native
 * Backend - Flask
 * API - HTML5 GeolocationAPI, Positionstack API, Mapbox Matrix API
-* Hosting - 
+* Hosting - Microsoft Azure
 
 ## A step beyond...
 * Using [Firebase Crashlytics](https://firebase.google.com/docs/crashlytics) to get clear actionable insight into app issues with this powerful realtime crash reporter.
