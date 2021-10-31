@@ -21,22 +21,25 @@ The frontend is built using React Native web framework and backend using Flask.
 **2. Tesseract OCR in use**
 For extracting the address from the scanned document PataParivartan uses open-source Tesseract OCR. 
 
-**3. Provision to edit the address**
+**3. [PostalPincode API](http://www.postalpincode.in/Api-Details)**
+Pincode is extracted from the JSON output of the tesseract-ocr. This pincode is passed as a query to postalpincode API to extract details of the place like city, state etc. The response from this API are then validated with the OCR extracted response, if it matches then the process is carried on else terminated.
+
+**4. Provision to edit the address**
 The extracted address then automatically got entered in the address fields, which further provides a provision to edit the address and add the left-out locality name to the address.
 
-**4. Forward Geocoding**
+**5. Forward Geocoding**
 The edited address is then converted into the geo-coordinates(latitude and longitude) using the forward geocoding method of Positionstack API. [Positionstack](https://positionstack.com/) provides 25,000 requests per month for free.
 
-**5. Locating mobile operator's position**
+**6. Locating mobile operator's position**
 The app asks for accessing the location of the mobile device and then HTML5 Geolocation API is used to locate the operator's position. The geo-coordinates are extracted from the JSON response of the API. 
 
-**6. Comparing the two coordinates**
+**7. Comparing the two coordinates**
 Distance between the current coordinates and coordinates we got using forward geocoding is done using Mapbox Matrix API. This step is done to ensure that the edited address doesn't refer to an altogether new address. Mapbox Matrix API returns the distance between two points as JSON respone.
 
-**7. Stored in UIDAI Database**
+**8. Stored in UIDAI Database**
 If the distance between two locations is less than 4 metres then the address is stored in the UIDAI  database else the process of updating the address is terminated and started from scanning the document again.
 
-**8. Google Lighthouse**
+**9. Google Lighthouse**
 Lighthouse which is an free open-source chrome extension is used to generate audit reports.
 
 ## Concept Note(Blueprint)
@@ -54,6 +57,8 @@ Lighthouse which is an free open-source chrome extension is used to generate aud
 * Using computer vision algorithms to create OCR API to make it more accurate.
 
 ## Audit Report
+![Screenshot 2021-10-31 170534](https://user-images.githubusercontent.com/69745609/139581400-b42de443-1010-4e32-9022-be7454603063.png)
+
 [Auditlogs.pdf](https://github.com/MPUATFORCES/PataParivartanBackend/files/7448532/Auditlogs.pdf)
 
 ## Presentation-Slides
