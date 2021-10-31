@@ -1,6 +1,8 @@
 from typing import Generator
 from flask import Flask
 from flask_restful import Api
+# from logging.config import fileConfig
+
 import logging
 
 # Modules
@@ -13,8 +15,8 @@ from resources.moAuth import MoAuth
 # initiate
 app = Flask(__name__)
 api = Api(app)
-
 logging.basicConfig(filename='demo.log', level=logging.DEBUG, format='%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
+# fileConfig('logging.cfg')
 
 # Routes
 api.add_resource(Extract, '/')
