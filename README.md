@@ -1,6 +1,6 @@
 # PataParivartanBackend
 
-## THEME - ADDRESS UPDATE
+### THEME - ADDRESS UPDATE
 ### CHALLENGE - Address Update using supporting documents
 
 ## Challenges
@@ -49,12 +49,12 @@ Lighthouse which is an free open-source chrome extension is used to generate aud
 * Hosting - 
 
 ## A step beyond...
-* Using Firebase Crashlytics to get clear actionable insight into app issues with this powerful realtime crash reporter.
+* Using [Firebase Crashlytics](https://firebase.google.com/docs/crashlytics) to get clear actionable insight into app issues with this powerful realtime crash reporter.
 * Improving the logging.cfg file to make the application more robust.
 * Using computer vision algorithms to create OCR API to make it more accurate.
 
 ## Audit Report
 [Auditlogs.pdf](https://github.com/MPUATFORCES/PataParivartanBackend/files/7448532/Auditlogs.pdf)
 
-
+## Presentation-Slides
 [Presentation-Slides](https://www.canva.com/design/DAEuH3MhCrU/share/preview?token=Ic546kbhcW22ZJP5prKIKA&role=EDITOR&utm_content=DAEuH3MhCrU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
