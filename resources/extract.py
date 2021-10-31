@@ -6,7 +6,7 @@ from PIL import Image
 from pytesseract import pytesseract
 
 #Module
-from common.util import Format
+from AddressFormatter.addressFormatter import addressJSON
 
 #Extraction-OCR-Class
 class Extract(Resource):
@@ -19,4 +19,5 @@ class Extract(Resource):
     def post(self):
         img=Image.open(request.files['img'])   #Load-Image
         text=pytesseract.image_to_string(img)  #Tesseract-Conversion
-        return Format(text)
+        # FormattedJSON =  (Format(text))
+        return addressJSON(text)
